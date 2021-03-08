@@ -14,8 +14,8 @@ public class Vector {
     }
     
     public Vector(Vector v){
-        x = v.getX();
-        y = v.getY();
+        this.x = v.getX();
+        this.y = v.getY();
     }
     
     public void setVectorAlternate(double magnitude, double angle){
