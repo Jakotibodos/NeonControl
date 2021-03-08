@@ -15,7 +15,7 @@ import javafx.scene.shape.Rectangle;
  * @author addav
  */
 public class StickSpring {
-    private double yPos;
+    private double YPos;
     private double xPos;
     private double angle = 0;
     
@@ -29,19 +29,18 @@ public class StickSpring {
     private Rectangle stickHB;
 
     public StickSpring() {
-        
     }
     
     public StickSpring(Vector velVector){
         this.velVector = velVector;
     }
 
-    public double getyPos() {
-        return yPos;
+    public double getYPos() {
+        return YPos;
     }
 
-    public void setyPos(double yPos) {
-        this.yPos = yPos;
+    public void setYPos(double YPos) {
+        this.YPos = YPos;
     }
 
     public double getxPos() {
@@ -93,7 +92,7 @@ public class StickSpring {
     }
     
     public double calculateNewY(){
-        
+        double newY = getYPos();
     }
     
     public void setPos(double newXPos, double newYPos){
