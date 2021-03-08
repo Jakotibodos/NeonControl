@@ -88,11 +88,13 @@ public class StickSpring {
     }
     
     public double calculateNewX(){
-        
+        double newX = getXPos()+getVelocityVec().getX();
+        return newX;
     }
     
     public double calculateNewY(){
-        double newY = getYPos();
+        double newY = getYPos()+getVelocityVec().getY();
+        return newY;
     }
     
     public void setPos(double newXPos, double newYPos){
