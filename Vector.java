@@ -1,15 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package neoncontrol;
-
-/**
- *
- * @author jakot
- */
-
+//Joshua Morency
 public class Vector {
     private double x, y;
     
@@ -21,6 +11,11 @@ public class Vector {
     public Vector(double x, double y){
         this.x = x;
         this.y = y;
+    }
+    
+    public Vector(Vector v){
+        x = v.getX();
+        y = v.getY();
     }
     
     public void setVectorAlternate(double magnitude, double angle){
