@@ -29,6 +29,7 @@ public class StickSpring {
     private Rectangle stickHB;
 
     public StickSpring() {
+        //hiiiiiii
     }
     
     public StickSpring(Vector velVector){
