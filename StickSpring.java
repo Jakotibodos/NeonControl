@@ -29,7 +29,7 @@ public class StickSpring {
     private Rectangle stickHB;
 
     public StickSpring() {
-        //hiiiiiii
+        
     }
     
     public StickSpring(Vector velVector){
@@ -64,8 +64,8 @@ public class StickSpring {
         return velVector;
     }
     
-    public void setVelocityVec(Vector velocityVec){
-        this.velocityVec = velocityVec;
+    public void setVelocityVec(Vector velVector){
+        this.velVector = velVector;
     }
     
     public double getMass() {
