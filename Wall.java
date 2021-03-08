@@ -17,9 +17,11 @@ public class Wall extends ImageView{
     
     private double xPos, yPos, angle, xSize, ySize;
     private Rectangle wallHB;
+    private Vector normal;
     
     public Wall(){
         setImage(new Image("Graphics/wall.png"));
+        normal = new Vector(0, 1);
     }
     
     public Wall(double xPos, double yPos, double xSize, double ySize, double angle){
@@ -29,6 +31,7 @@ public class Wall extends ImageView{
         setYSize(ySize);
         setAngle(angle);
         setImage(new Image("Graphics/wall.png"));
+        normal = new Vector(Math.cos(angle), Math.sin(angle));
     }
 
     public double getXPos() {
