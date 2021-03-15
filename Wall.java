@@ -4,10 +4,9 @@
  * and open the template in the editor.
  */
 package neoncontrol;
-
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.shape.Rectangle;
+
 
 /**
  *
@@ -16,12 +15,10 @@ import javafx.scene.shape.Rectangle;
 public class Wall extends ImageView{
     
     private double xPos, yPos, angle, xSize, ySize;
-    private Rectangle wallHB;
-    private Vector normal;
+    
     
     public Wall(){
         setImage(new Image("Graphics/wall.png"));
-        normal = new Vector(0, 1);
     }
     
     public Wall(double xPos, double yPos, double xSize, double ySize, double angle){
@@ -31,7 +28,6 @@ public class Wall extends ImageView{
         setYSize(ySize);
         setAngle(angle);
         setImage(new Image("Graphics/wall.png"));
-        normal = new Vector(Math.cos(angle), Math.sin(angle));
     }
 
     public double getXPos() {
@@ -79,18 +75,11 @@ public class Wall extends ImageView{
         this.ySize = ySize;
         this.setFitHeight(ySize);
     }
-
-    public Rectangle getWallHB() {
-        return wallHB;
-    }
-
-    public void setWallHB(Rectangle wallHB) {
-        this.wallHB = wallHB;
-    }
     
     public void setPos(double newXPos, double newYPos){
         setXPos(newXPos);
         setYPos(newYPos);
+       
     }
     
     public Vector getNormal(){
