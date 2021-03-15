@@ -6,6 +6,7 @@
 package ProgBoys;
 
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.shape.Rectangle;
 
 
@@ -14,7 +15,7 @@ import javafx.scene.shape.Rectangle;
  *
  * @author addav
  */
-public class StickSpring {
+public class StickSpring extends ImageView{
     private double YPos;
     private double xPos;
     private double angle = 0;
