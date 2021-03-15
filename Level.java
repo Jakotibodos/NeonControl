@@ -7,21 +7,24 @@ package ProgBoys;
 
 import java.util.ArrayList;
 import javafx.scene.image.Image;
-
+import javafx.scene.image.ImageView;
 /**
  *
  * @author addav
  */
-public class Level {
-    private ArrayList<Wall> wallList;
-    private Image background;
+public class Level extends ImageView{
+    private ArrayList<Wall> wallList = new ArrayList<Wall>();
+   
 
     public Level() {
+        setBorders();
+        this.setImage(new Image("Graphics/background level.jpg"));
     }
 
     public Level(ArrayList<Wall> wallList, Image background) {
         this.wallList = wallList;
-        this.background = background;
+        setImage(background);
+        setBorders();
     }
     
     public void setWallList(ArrayList<Wall> wallList){
@@ -29,7 +32,7 @@ public class Level {
     }
     
     public void setBackground(Image background){
-        this.background = background;
+        setImage(background);
     }
     
     public void addWall(Wall w){
@@ -41,10 +44,17 @@ public class Level {
     }
 
     public Image getBackground() {
-        return background;
+        return this.getImage();
     }
     
     public Wall getWall(int index){
         return wallList.get(index);
+    }
+    
+    private void setBorders(){
+        addWall(new Wall(-10,-100,75,900,0));
+        addWall(new Wall(1215,-100,75,900,0));
+        addWall(new Wall(-110,-10,1500,75,0));
+        addWall(new Wall(-110,630,1500,75,0));
     }
 }
