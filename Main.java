@@ -15,7 +15,7 @@ import javafx.stage.Stage;
  *
  * @author jakot
  */
-public class NeonControl {
+public class NeonControl extends Application{
 
    public void start(Stage stage) throws Exception{
     
