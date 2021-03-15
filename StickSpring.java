@@ -99,5 +99,17 @@ public class StickSpring {
     
     public void setPos(double newXPos, double newYPos){
         
-    }        
+    }  
+    
+    public Rectangle getHB1() {
+        return spring1HB;
+    }
+    
+    public Rectangle getHB2() {
+        return spring2HB;
+    }
+    
+    public Rectangle getHB3() {
+        return stickHB;
+    }
 }
