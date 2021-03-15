@@ -76,14 +76,6 @@ public class StickSpring extends ImageView{
         this.mass = mass;
     }
 
-    public Image getImage() {
-        return image;
-    }
-
-    public void setImage(Image image) {
-        this.image = image;
-    }
-
     public void rotate(){
         double currentAngle = this.getAngle();
     }
